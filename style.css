@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    width: 100%;
+    height: 8vh;
+    /*background-color: red;*/
+    margin-top: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around
+}
+h2{
+    border-right: 2px solid black;
+    /*background-color: blue;*/
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work sans';
+    /*padding-right: 70px;*/
+    font-size: 22px;
+    font-weight: 500;
+}
+h1{
+    font-family: 'Work sans';
+    font-size: 40px;
+    position: relative;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Monument' ;
+    letter-spacing: -1;
+}
+#agency{
+    width: 23%;
+    padding-right: 43px;
+}
+#women{
+    padding-right: 60px;
+}
+i{
+    padding-right: 25px;
+}
+#center{
+    /*background-color: blueviolet;*/
+    width: 100%;
+    height: 90%;
+    padding: 7vh 10vh;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#overlay{
+    /*background-color: chocolate;*/
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    padding-top:3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#overlay1{
+    /*background-color: blue;*/
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:3.6vw;
+    /*border-bottom: 2px solid rgb(255, 255, 255);*/
+    margin-bottom: 4px; 
+}
+#overlay2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid white;
+    font-size: 1.5vw;
+    color: white;
+}
+#overlay2 img{
+    color: white;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /*background-color: red;*/
+    /*
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y:hidden ;*/
+    /*use this code for making animation using flex*/
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+#scroll img{
+    /*display: none;*/
+    height: 60%;
+    width: 12%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#container{
+    height: 100%;
+    width: 80%;
+    /*background-color: blue;*/
+    /*border: 2px solid;*/
+    display: inline-block;
+    /*use this code if want to make animation using flex otherwise dont*/
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+    /*animation code*/
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    width: 100%;
+    height: 9vh;
+    /*background-color: cadetblue;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid;
+    margin-right: 1vw;
+}
+#alphabet h6{
+    font-size: 12px;
+    font-weight: 400;
+    /*background-color: chartreuse;*/
+    padding: 0.6vw 0.8vw;
+    border-radius: 50%;
+    border: 2px solid #00000000; /*borders are transparent*/
+    transition: all ease 0.5s;
+}
+#alphabet h6:hover{
+    border: 2px solid #000; /* when hover, borders will appear*/
+}
+#page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vw;
+    padding-left: 8vw ;
+    padding-right: 8vw ;
+    padding-bottom: 5vw;
+}
+#page2L{
+    width: 45%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+#page2L img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2Lbottom{
+    /*background-color: burlywood;*/
+    height: 5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+#page2R{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#page2R img{
+    width: 100%;
+    height: 70%%;
+    object-fit: cover;
+}
+#page2Rbottom{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+#page2Rbottom h3{
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#page2Rbottom h5{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+#page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: cadetblue;  */
+    padding: 5vw;
+}
+#page3{
+    display: flex;
+    justify-content: space-between;
+}
+#page3L{
+    height: 100%;
+    width: 50%;
+    /* background-color: blueviolet;  */
+}
+#page3L img{
+    height: 40%;
+    padding-left:150px ;
+    margin-top: 150px;
+}
+#page3L h3{
+    padding-top: 20px;
+    padding-left: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* #page3L img{
+    height: 120%%;
+    width: 100%;
+} */
+#page3R{
+    /* background-color: brown; */
+    height: 100%;
+    width: 50%;
+}
+#page3R img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#page4{
+    width: 100%;
+    height: 100%;
+    /* background-color: red;  */
+    position: relative;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+#page4>h1{
+    text-transform: uppercase;
+    font-family: "Monument";
+    text-align: center;
+    padding-left: 40vw;
+    padding-top: 7vh;
+    margin-bottom: 7vh;
+}
+.elem{
+    /* background-color: aqua; */
+    height: 16vh;   
+    border-top: 2px solid black;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+.elem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.elem>h4{
+    text-transform: uppercase;
+    margin-left: 2.5vw;
+    /* background-color: blueviolet; */
+    width: 5%;
+    font-size: 1.3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.elem-part2{
+    padding-top: 3vh;
+    /* background-color: blue;  */
+    width: 40vw;
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.elem-part2 h3{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+.elem-part1{
+    /* background-color: chocolate; */
+    height: 11vh;
+    width: 8vw;
+}
+
+.elem-part1 h3{
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.elem-part1 h5{
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.elem img{
+    height: 12vh;
+    width: 7vw;
+    border-radius: 50%;
+    object-position: top;
+    position: absolute;
+    /* given absolute for smooth movement */
+    left: 20%;
+    transition: all ease 0.8s;
+    /* ?for transition from one place to other */
+    opacity: 0;
+}
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 27%;
+    background-color: grey;
+}
+.elem:hover{
+    background-color: rgba(194, 180, 180, 0.577);
+}
+#page5{
+    /* background-color: rgb(255, 0, 191); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-right: 7%;
+}
+#page5L{
+    width: 40%;
+    height: 100%;
+    /* background-color: cadetblue; */
+}
+#page5R{
+    width: 55%;
+    height: 100%;
+    /* background-color: cadetblue; */
+}
+#page5L img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page5Rtop{
+    width: 100%;
+    height: 50%;
+    /* background-color:cyan; */
+    padding-right: 10%;
+    padding-top: 5%;
+}
+#page5Rtop h3{
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-family:"Monument";
+    margin-bottom: 4vh;
+}
+#page5Rtop h4{
+    font-size: 1vw;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 4vh;
+}
+#page5Rtop h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#page5Rbottom{
+    width: 100%;
+    height: 50%;
+    /* background-color:chartreuse; */
+    display: flex;
+    gap: 3%;
+    padding-right: 10%;
+}
+.page5image{
+    width: 45%;
+    height: 100%;
+    /* background-color: darkgoldenrod; */
+}
+.page5image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page6{
+    width: 100%;
+    height: 80%;
+    background-color:pink;
+    padding: 7vh;
+    border-radius: 20%;
+}
+#page6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3.5vh solid rgba(56, 53, 53, 0.752);
+    border-radius: 50px;
+}
+#page7{
+    width: 100%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    padding-right: 15vw;
+}
+#page7L{
+    width: 45%;
+    height: 100%;
+    /* background-color: lightblue; */
+}
+#page7L img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page7R{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(63, 155, 186); */
+}
+#page7Rtop{
+    height: 65%;
+    width: 100%;
+    /* background-color: rgb(153, 121, 183); */
+}
+#page7Rtop img{
+    width: 100%;
+    height: 100%;
+}
+#page7Rbottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4vh;
+}
+#page7Rbottom h4{
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#page7Rbottom h5{
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
